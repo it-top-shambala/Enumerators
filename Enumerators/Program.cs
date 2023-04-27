@@ -17,3 +17,18 @@ ListHelper.Print(list);
 
 EnumeratorHelper.Print(array);
 EnumeratorHelper.Print(list);
+
+Array.Sort(array);
+Array.Sort(list.ToArray());
+
+EnumeratorHelper.Print(array);
+EnumeratorHelper.Print(list);
+var average = list.Average();
+Console.WriteLine($"Average = {average}");
+
+var distinctArray = array.Distinct();
+EnumeratorHelper.Print(distinctArray);
+
+var result = array.Distinct().Skip(3).Take(5);
+EnumeratorHelper.Print(result);
+
